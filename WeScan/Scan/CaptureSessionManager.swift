@@ -79,7 +79,7 @@ final class CaptureSessionManager: NSObject, AVCaptureVideoDataOutputSampleBuffe
         
         captureSession.beginConfiguration()
         
-        let photoPreset = AVCaptureSession.Preset.photo
+        let photoPreset = AVCaptureSession.Preset.hd1280x720
         
         if captureSession.canSetSessionPreset(photoPreset) {
             captureSession.sessionPreset = photoPreset
